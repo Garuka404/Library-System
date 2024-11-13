@@ -1,0 +1,21 @@
+D:\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\C# assigment\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
