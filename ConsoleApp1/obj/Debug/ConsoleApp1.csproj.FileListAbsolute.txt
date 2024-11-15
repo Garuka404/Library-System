@@ -19,3 +19,10 @@ D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\Co
 D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 D:\ALL\C# assigment\New folder\C# assigment\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\ALL\git projects\Library System\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\ALL\git projects\Library System\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\ALL\git projects\Library System\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\ALL\git projects\Library System\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\ALL\git projects\Library System\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\ALL\git projects\Library System\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\ALL\git projects\Library System\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
