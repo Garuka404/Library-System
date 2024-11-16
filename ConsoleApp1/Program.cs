@@ -123,7 +123,40 @@ namespace ConsoleApp1
 
 
         }
+        static void AddBook()
+        {
+            Console.Write("Enter the ISBN :");
+            string ISBN = Console.ReadLine();
 
-          }
+            bool checkISBN = true;
+
+            foreach (var book in Program.books) //used to prevent ISBN number conflit
+            {
+                if (ISBN == book.ISBN)
+                {
+                    checkISBN = false;
+                    Console.WriteLine("ISBN number is already used in the system.");
+                    break;
+                }
+            }
+
+            if (checkISBN) //if ISBN number OK, continue...
+            {
+                Console.Write("Enter the title :");
+                string title = Console.ReadLine();
+
+                Console.Write("Enter the author :");
+                string author = Console.ReadLine();
+
+                Program.books.Add(new Book(title, author, ISBN));
+                Console.WriteLine("New book has been added successfully.");
+                File.AppendAllText(Program.path, $"{ISBN} - New book has been added successfully at {getDateTime()}\n");
+            }
+
+
+        }
+
+
     }
+
 }
