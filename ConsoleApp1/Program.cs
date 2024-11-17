@@ -155,6 +155,83 @@ namespace ConsoleApp1
 
 
         }
+        static void IssueBooK()
+        {
+            Console.Write("Enter the ISBN :");
+            string ISBN = Console.ReadLine();
+
+            bool ckeckRequest = false;
+            bool availablity = true;
+
+            foreach (var book in Program.books) // find ISBN number valid or not
+            {
+                if (book.ISBN == ISBN)
+                {
+                    ckeckRequest = true;
+                    break;
+                }
+            }
+
+            if (!ckeckRequest) // this notify that ISBN is not valid
+            {
+                Console.WriteLine("Bad request, please check ISBN");
+            }
+
+            else
+            {
+                foreach (var issue in Program.issues) // check that book is issued or not using issued-Book-List
+                {
+                    if (issue.ISBN == ISBN)
+                    {
+                        Console.WriteLine("This book is not available now");
+                        availablity = false;
+                    }
+                }
+
+                if (availablity) // if is not issued, go to the next step
+                {
+                    bool isMember = false;
+
+                    Console.Write("Enter the NIC number :");
+                    string NIC = Console.ReadLine();
+
+                    foreach (var item in Program.members) // check member is registered or not using member-List
+                    {
+                        if (item.NIC == NIC)
+                        {
+                            isMember = true;
+                            break;
+                        }
+                    }
+
+                    if (isMember) // if user is registed as member, now continue...
+                    {
+                        string[] dateAndTime = getDateTime().ToString().Split();
+                        string date = dateAndTime[0];
+
+                        DateTime newDate = DateTime.Now.AddDays(14);
+                        string[] deadlineDateAndTime = newDate.ToString().Split();
+                        string deadline = deadlineDateAndTime[0];
+
+                        Program.issues.Add(new Issued(ISBN, NIC, date, deadline));
+                        Program.handleReport();
+                        Console.WriteLine("Book has been issued successfully.");
+                        File.AppendAllText(Program.path, $"{ISBN} - Book has been issued to {NIC} successfully at {getDateTime()}\n");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("This user isn't registered as a member"); // if user is not registed, not allowed to do that
+                    }
+                }
+
+                else
+                {
+                    Console.WriteLine("Book is not available now"); // if book is already issued, display this error message
+                }
+            }
+
+        }
 
 
     }
