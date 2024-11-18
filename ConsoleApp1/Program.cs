@@ -155,7 +155,7 @@ namespace ConsoleApp1
 
 
         }
-        static void IssueBooK()
+        static void IssueBooK() 
         {
             Console.Write("Enter the ISBN :");
             string ISBN = Console.ReadLine();
@@ -230,6 +230,40 @@ namespace ConsoleApp1
                     Console.WriteLine("Book is not available now"); // if book is already issued, display this error message
                 }
             }
+
+        }
+        static void ViewIssuedBooks()
+        {
+            foreach (var issue in Program.issues)
+            {
+                string issuedDetailsRow = "";
+
+
+
+                foreach (var book in Program.books)
+                {
+                    if (issue.ISBN == book.ISBN)
+                    {
+                        issuedDetailsRow += "ISBN :" + book.ISBN + "\n";
+                        issuedDetailsRow += "Title :" + book.Title + "\n";
+                        issuedDetailsRow += "Author :" + book.Author + "\n";
+                    }
+                }
+                foreach (var member in Program.members)
+                {
+                    if (member.NIC == issue.NIC)
+                    {
+                        issuedDetailsRow += "NIC :" + member.NIC + "\n";
+                        issuedDetailsRow += "Name :" + member.Name + "\n";
+                        issuedDetailsRow += "Mobile :" + member.Mobile + "\n";
+                        issuedDetailsRow += "Address :" + member.Address + "\n";
+                        issuedDetailsRow += "Issued Date :" + issue.IssuedDate + "\n";
+                        issuedDetailsRow += "Deadline :" + issue.Deadline + "\n";
+                    }
+                }
+                Console.WriteLine(issuedDetailsRow + "\n");
+            }
+
 
         }
 
