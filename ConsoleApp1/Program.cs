@@ -266,8 +266,34 @@ namespace ConsoleApp1
 
 
         }
+        static void ReturnBook()
+        {
+            Console.Write("Enter the ISBN :");
+            string ISBN = Console.ReadLine();
 
+            bool isFound = false;
 
+            for (int i = 0; i < Program.issues.Count; i++)
+            {
+                if (Program.issues[i].ISBN == ISBN) // check that ISBN number in issued-Book-List
+                {
+                    isFound = true;
+                    Program.issues.RemoveAt(i);
+                    Program.handleReport();
+                    Console.WriteLine("Book has been successfully returned.");
+                    File.AppendAllText(Program.path, $"{ISBN} - Book has been successfully returned at {getDateTime()}\n");
+                    break;
+                }
+            }
+            if (!isFound) // if ISBN number not in issued-Book-List
+            {
+                Console.WriteLine("Issued book not found, please check ISBN again.");
+            }
+        }
     }
+
+
+
+}
 
 }
