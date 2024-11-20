@@ -292,8 +292,51 @@ namespace ConsoleApp1
         }
     }
 
+    class Book
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string ISBN { get; set; }
 
+        public Book(string title, string author, string isbn)
+        {
+            Title = title;
+            Author = author;
+            ISBN = isbn;
+        }
+    }
 
-}
+    class Member
+    {
+        public string NIC { get; set; }
+        public string Name { get; set; }
+        public string Mobile { get; set; }
+        public string Address { get; set; }
+
+        public Member(string nic, string name, string mobile, string address)
+        {
+            NIC = nic;
+            Name = name;
+            Mobile = mobile;
+            Address = address;
+        }
+    }
+
+    class Issued
+    {
+        public string ISBN { get; set; }
+        public string NIC { get; set; }
+        public string IssuedDate { get; set; }
+        public string Deadline { get; set; }
+
+        public Issued(string iSBN, string nic, string issuedDate, string deadline)
+        {
+            ISBN = iSBN; //used to find about book
+            NIC = nic;  //used to find about member
+            IssuedDate = issuedDate;
+            Deadline = deadline;
+        }
+
+    }
 
 }
